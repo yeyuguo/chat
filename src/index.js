@@ -12,3 +12,13 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
+
+{/*
+import {Router, Route, browserHistory} from 'react-router';
+import {FriendMsg} from '../compent/friendMsg'
+const routers = (
+    <Router history={browserHistory}>
+        <Route path="/friendMsg" component={friendMsg} >
+    </Router>
+);
+*/}
