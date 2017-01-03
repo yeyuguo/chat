@@ -1,14 +1,13 @@
 
 import React,{ Component } from 'react';
 import { Tabs,Icon } from 'antd';
-import { Row, Col } from 'antd';
 const TabPane = Tabs.TabPane;
 
 // 参考： http://www.cnblogs.com/yongjz/p/5356914.html
 
 // React.createClass 方式
-{/*
-const selfTab = React.createClass({
+
+const Tab_self = React.createClass({
   getInitialState:function(){
       return {
           tabPosition:'bottom'
@@ -27,10 +26,11 @@ const selfTab = React.createClass({
     )
   }
 })
-*/}
+
 
 // ES6 语法 
-class selfTab extends Component {
+{/*
+class Tab_self extends Component {
   constructor(props,context){
      super(props,context);
      this.state = {
@@ -51,7 +51,7 @@ class selfTab extends Component {
       
   }
 }
+*/}
 
 
-
-export default selfTab
+export default Tab_self

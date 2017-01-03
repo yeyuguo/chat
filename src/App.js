@@ -3,28 +3,24 @@
 
 import React, { Component } from 'react';
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-{/* tab插件 start */} 
+//  tab插件 start 
 import {Layout} from 'antd';
-import { Tabs,Icon } from 'antd';
-import { Row, Col } from 'antd';
-const TabPane = Tabs.TabPane;
-const { Header, Footer, Sider, Content } = Layout;
+
+// import { Row, Col } from 'antd';
+
+const { Header, Footer, Content } = Layout;
 // import Tabs from 'antd/lib/tabs'
 // const TabPane = Tabs.TabPane;
 {/* tab插件  end  */}
 
 
-import TestID from './self_comp'
+
+import  Tab_self from './self_comp'
 
 class App extends Component {
-   constructor(props,context){
-     super(props,context);
-     this.state = {
-       tabPosition:'bottom',
-     }
-   }
+ 
  
   render() {   
     return (
@@ -39,13 +35,14 @@ class App extends Component {
           <div className="friendShow">朋友圈 </div>
           <div className="setting">设置</div>
           */}
-           {/*  <TestID /> */}
+           
 
           
            <Layout>
               <Header>Header</Header>
               <Content>
-                <TestID />
+                {/*  tab组件 */}
+                <Tab_self />
               </Content>
               <Footer>
               </Footer>
